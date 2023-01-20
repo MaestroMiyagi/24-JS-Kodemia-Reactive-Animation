@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2rem;
+  }
+
+  .figure {
+    width: 100px;
+    height: 100px;
+    border-color: #ff0000;
+    border-style: solid;
+    border-width: 2px;
+    position: relative;
+    }
+
+  
+ /* CELULAR */
+@media screen and (min-width: 320px) and (max-width:767px){
+
+
+      .figure{
+        border-radius: 50%;
+
+      }
+  }
+  @media screen and (min-width: 768px) and (max-width:1023px){
+
+    .figure {
+        background-color: black;
+
+    }
+}
+   /* DESKTOP*/
+
+   @media screen and (min-width: 1024px){
+
+    .figure {
+        animation: change 2s ease infinite;
+    }
+
+    @keyframes change {
+        0% {
+            border-radius: 50%;
+        }
+    
+        50% {
+            border-radius: 0%;
+        }
+    
+        100% {
+            border-radius: 50%;
+        }
+    }
+
+
+   }
